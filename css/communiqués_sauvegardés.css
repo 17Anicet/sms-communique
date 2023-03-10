@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Sen-Bold';
+    src: url('Sen-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sen-ExtraBold';
+    src: url('Sen-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sen-Regular';
+    src: url('Sen-Regular.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    height: 100vh;
+    font-family: 'Sen-Regular';
+    background-color: #f2fdff;
+    margin-bottom: 15px;
+}
+header{
+    background-color: rgba(0,2,30);
+    height: 60px;
+    border-bottom: 2px solid white;
+}
+header h2{
+    padding: 10px;
+    color: white;
+}
+#deconnexion a{
+    color: white;
+    text-decoration: none;
+}
+#deconnexion p{
+    margin-top: -10px;
+}
+#deconnexion{
+    position: absolute;
+    right: 0;
+    margin-top: -40px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    height: 20px;
+}
+#deconnexion a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display: none;
+}
+.menu_elements{
+    display: none;
+ 
+}
+/* ******************************************************************************************** */
+#parti_communiqués_sauvegarder{
+    margin-top: 20px;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 30%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titre_de_communiqués{
+    background-color: rgba(0, 153, 255, 0.288);
+    margin: auto;
+    height: 90px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px  rgba(112, 112, 112, 0.486);
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.titre_de_communiqués:hover{
+    box-shadow: 0px 0px 5px 0px  rgba(0, 0, 0, 0.486);
+}
+.modifier, .supprimer, .send{
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: rgba(0,2,30);
+    border: none;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+}
+@media screen and (max-width: 930px){
+    #parti_communiqués_sauvegarder{
+       width: 35%;
+    }
+
+}
+@media screen and (max-width: 800px){
+    #parti_communiqués_sauvegarder{
+        width: 50%;
+     }
+}
+@media screen and (max-width: 680px){
+    #parti_communiqués_sauvegarder{
+        width: 60%;
+     }
+}
+@media screen and (max-width: 795px){
+    #deconnexion{
+        display: none;
+       }
+       header h2{
+           position: absolute;
+           right: 0;
+       }
+       .menu{
+           display: initial;
+           position: absolute;
+           left: 0;
+       }
+       .menu_elements{
+           margin-left: -100%;
+           transition: all 0.5s ease; 
+           display: initial;
+           position: absolute;
+           top: 60px;
+           background-color: white;
+           width: 250px;
+           height: 100vh;
+           left: 0px;
+           box-shadow: 0px 0px 5px 0px  rgba(0, 0, 0, 0.486);
+       }
+       .menu_elements.mobile-menu{
+           margin-left: 0;
+       }
+       header img{
+           width: 28px;
+           margin-left: 20px;
+           margin-top: 15px;
+       }
+       #deconnexion_responsive{
+        border-radius: 20px;
+        margin-top: 40px;
+        background-color: rgba(0,2,30);
+        width: 150px;
+        padding: 5px;
+        margin-left: 10px;
+       }
+       #deconnexion_responsive a{
+           color: white;
+       }
+       h1{
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .communication{
+            margin-left: 15px;
+            margin-top: 20px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 8px;
+        }
+            .communication:hover{
+                background-color: #e3f3ff;
+        }
+            .menu_inactif{
+                margin-left: 15px;
+                margin-top: 15px;
+                padding: 8px;
+        }
+            .menu_inactif:hover{
+                background-color: #e3f3ff;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+        }
+        #parti_communiqués_sauvegarder{
+            height: 85vh;
+        }
+}
+@media screen and (max-width: 465px){
+    #parti_communiqués_sauvegarder{
+        width: 70%;
+     }
+}
+@media screen and (max-width: 395px){
+    #parti_communiqués_sauvegarder{
+        width: 80%;
+     }
+}
+@media screen and (max-width: 375px){
+   
+        .titre_de_communiqués{
+            height: 90px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    }
+@media screen and (max-width: 360px){
+        .menu_elements{
+            width: 200px;
+        }
+}
+@media screen and (max-width: 345px){
+    #parti_communiqués_sauvegarder{
+        width: 90%;
+     }
+}
+@media screen and (max-width: 305px){
+    #parti_communiqués_sauvegarder{
+        width: 95%;
+     }
+}
+
+
+
+       
+
